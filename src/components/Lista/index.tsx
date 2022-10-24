@@ -8,7 +8,7 @@ function Lista({ tarefas }: { tarefas: ITarefa[] }) {
     <aside className={style.listaTarefas}>
       <ul>
         {tarefas.map((item, index) => (
-          <Item key={index} tarefa={item.tarefa} tempo={item.tempo} />
+          <Item key={index} {...item} />
         ))}
       </ul>
     </aside>
